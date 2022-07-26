@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/functions.php';
-require_once __DIR__ . '/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $keyword = filter_input(INPUT_GET, 'keyword');
