@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . '/functions.php';
-require_once __DIR__ . '/config.php';
 
-$getinfoall = getinfo();
+$get_info = get_info();
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@ $getinfoall = getinfo();
 <body>
     <h2>本日のご紹介ペット!</h2>
     <ul>
-        <?php foreach ($getinfoall as $animal) : ?>
+        <?php foreach ($get_info as $animal) : ?>
             <?= h($animal['type'] . "の" . $animal['classification'] . "ちゃん")  ?><br>
             <?= h($animal['description'])  ?><br>
             <?= h($animal['birthday'] . "生まれ")  ?><br>

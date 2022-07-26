@@ -25,7 +25,7 @@ function h($str)
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 
-function getinfo()
+function get_info()
 {
     // データベースに接続
     $dbh = connect_db();
