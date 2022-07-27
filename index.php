@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $keyword = filter_input(INPUT_GET, 'keyword');
     $search_info = search_info($keyword);
 }
+
 ?>
 
 <!DOCTYPE html>
